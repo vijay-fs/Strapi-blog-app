@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import { fetchAPI } from "./utils/fetch-api";
-
+import axios from 'axios';
 import Loader from "./components/Loader";
 import PostList from "./components/PostList";
 import PageHeader from "./components/PageHeader";
@@ -86,7 +86,7 @@ export default function Profile() {
           </div>
         )}
       </PostList>
-     
+   
     </div>
   );
 }
